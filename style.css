@@ -1,0 +1,103 @@
+*,
+body,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*Remove the margin, padding and border of all elements (all browsers)*/
+	font-size: 10px;
+	/*10px = 1em -> pixel size/10 = #em (16px=1.6em)*/
+	box-sizing: border-box;
+	/*The full area/size of an element`s box is measured by its total height and width, not just the content section. The different box sections adjust to the defined box size */
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	width: 100vw;
+	font-family: cursive;
+}
+
+.wrapper {
+	width: min(80%, 500px);
+	border: 1px solid black;
+}
+
+.wrapper:hover {
+	box-shadow: 1px 1px 1px 1px black;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.header__h1 {
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+.header__img {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 10px;
+}
+
+img {
+	border-style: none;
+	max-inline-size: 40%;
+	padding-top: 5px;
+}
+
+.card-cols {
+	display: flex;
+	padding: 10px;
+}
+
+main {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+aside {
+	flex-grow: 1;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+input {
+	font-size: 1.6rem;
+	border-bottom: 1px solid grey;
+	margin-bottom: 10px;
+	width: 90%;
+	font-family: cursive;
+}
+
+footer {
+	display: grid;
+	place-items: center;
+}
+
+button {
+	font-size: 1.6rem;
+	background-color: darkgray;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: cursive;
+	cursor: pointer;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 1px 1px 1px 1px black;
+}
